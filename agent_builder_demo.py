@@ -9,12 +9,12 @@ llm_config = {"temperature": 0}
 
 builder = AgentBuilder(
     config_file_or_env=config_file_or_env,
-    builder_model="gpt-4-0125-preview",
-    agent_model="gpt-4-0125-preview",
+    builder_model="deepseek-chat",
+    agent_model="deepseek-chat",
 )
 
 config_list = autogen.config_list_from_json(
-    config_file_or_env, filter_dict={"model": ["gpt-4-0125-preview"]}
+    config_file_or_env, filter_dict={"model": ["deepseek-chat"]}
 )
 
 building_task = "Gather information like company profile, recent stock price fluctuations, market news, and financial basics of a specified company (e.g. AAPL) by programming and analyze its current positive developments and potential concerns. Based on all the information, come up with a rough estimate (e.g. up by 2-3%) and give a summary of the reasons for next week's stock price. Each python program should execute on its own, and avoid plotting any chart."
