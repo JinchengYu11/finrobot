@@ -11,7 +11,7 @@ from functools import partial
 config_list_gpt4 = autogen.config_list_from_json(
     "OAI_CONFIG_LIST",
     filter_dict={
-        "model": ["deepseek-chat"],
+        "model": ["deepseek-v4-pro"],
     },
 )
 

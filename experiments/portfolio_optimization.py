@@ -11,7 +11,7 @@ llm_config = {
     "config_list": autogen.config_list_from_json(
         "../OAI_CONFIG_LIST",
         filter_dict={
-            "model": ["deepseek-chat"],
+            "model": ["deepseek-v4-pro"],
         },
     ),
     "cache_seed": 42,
